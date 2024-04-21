@@ -1,6 +1,6 @@
 import React, {} from 'react'
 
- function Dashboard() {
+ function DashboardMain() {
   return (
   <div>
     {/* Content Wrapper. Contains page content */}
@@ -579,4 +579,4 @@ import React, {} from 'react'
 
   );
 }
-export default Dashboard;
+export default DashboardMain;

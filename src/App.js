@@ -1,12 +1,12 @@
+/* eslint-disable react/jsx-pascal-case */
 import './App.css';
-// import Pfa_frontend from './Pfa_frontend';
-import Authentification from './pages/Authentification';
+import Pfa_frontend from './Pfa_frontend';
 
 function App() {
   return (
     <div className="App">
-      {/* <Pfa_frontend/> */}
-      <Authentification/>
+       {/*eslint-disable-next-line react/jsx-pascal-case */}
+       <Pfa_frontend/>
     </div>
   );
 }
