@@ -1,6 +1,6 @@
 import React, {useRef } from 'react';
 import { Link} from 'react-router-dom';
-const Table = ({ api, columnTitles }) => {
+const Table = ({ api, columnTitles,actions }) => {
   const tableRef = useRef(null);
   return (
     
@@ -19,17 +19,13 @@ const Table = ({ api, columnTitles }) => {
                 <td className='text-start' key={index}>{value}</td>
                
               ))}
-
-               <td className="text-start"> 
-               <Link to="test" className="mx-2" >
-                  <i class="me-2 nav-icon fas fa-file-alt"></i>
-                  <span>المزيد من التفاصل </span>
-                </Link>
-
-                <Link to="test" className="mx-2" >
-                  <i className="me-2 nav-icon fas fa-solid fa-ban"/>
-                  <span>إلغاء الإعلان</span>
-                </Link>
+               
+                <td className='text-start' key={index}>
+                  {actions.map((value, index) => (
+                    <Link to="test" className="mx-2" key={index}>
+                      <span>{value}</span> 
+                    </Link>
+                  ))}
                 </td>
             </tr>
           ))}

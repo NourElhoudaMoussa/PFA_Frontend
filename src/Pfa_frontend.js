@@ -6,6 +6,9 @@ import Page404 from './pages/Page404';
 import Layout from './pages/Layout';
 import NewsForm from './components/NewsForm';
 import DashboardMain from './components/DashboardMain';
+import Calendrier from './components/Calendrier';
+import ResponsableServiceForm from './components/ResponsableServiceForm';
+import ListResponsableService from './components/ListResponsableService';
  function Pfa_frontend() {
   return (
     <BrowserRouter>
@@ -18,6 +21,9 @@ import DashboardMain from './components/DashboardMain';
               <Route path='dashboard' element={<DashboardMain/>}></Route>
               <Route path='News' element={<ListofNews/>}></Route>
               <Route path='AddNews' element={<NewsForm />}></Route>
+              <Route path='Calendar' element={<Calendrier />}></Route>
+              <Route path='AddResponsableService' element={<ResponsableServiceForm />}></Route>
+              <Route path='ListResponsableService' element={<ListResponsableService/>}></Route>
           </Route>
       </Routes>
     </BrowserRouter>

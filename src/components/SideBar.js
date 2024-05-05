@@ -30,12 +30,12 @@ import { Link ,NavLink} from 'react-router-dom';
                     </li>
                     <li className={`nav-item ${sidebarStyles.nav_item}`}>
                         <NavLink to={"/Service"} className={`nav-link ${sidebarStyles.nav_link}`}>
-                            <i class="me-2 nav-icon fas fa-usps"></i>
+                            <i class="me-2 nav-icon fas fa-list"></i>
                             <p>الخدمات</p>
                         </NavLink>
                     </li>
                     <li className={`nav-item ${sidebarStyles.nav_item}`}>
-                        <NavLink to={"/ResponsableService"} className={`nav-link ${sidebarStyles.nav_link}`}>
+                        <NavLink to={"/ListResponsableService"} className={`nav-link ${sidebarStyles.nav_link}`}>
                             <i class="me-2 nav-icon fas fa-user-tie"></i>
                             <p>المسؤولين عن الخدمات</p>
                         </NavLink>
