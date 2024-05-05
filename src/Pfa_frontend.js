@@ -9,6 +9,8 @@ import DashboardMain from './components/DashboardMain';
 import Calendrier from './components/Calendrier';
 import ResponsableServiceForm from './components/ResponsableServiceForm';
 import ListResponsableService from './components/ListResponsableService';
+import DetailsNews from './components/DetailsNews';
+import ListReclamation from './components/ListReclamation';
  function Pfa_frontend() {
   return (
     <BrowserRouter>
@@ -24,6 +26,8 @@ import ListResponsableService from './components/ListResponsableService';
               <Route path='Calendar' element={<Calendrier />}></Route>
               <Route path='AddResponsableService' element={<ResponsableServiceForm />}></Route>
               <Route path='ListResponsableService' element={<ListResponsableService/>}></Route>
+              <Route path='NewsDtails' element={<DetailsNews/>}></Route>
+              <Route path='ListReclamation' element={<ListReclamation/>}></Route>
           </Route>
       </Routes>
     </BrowserRouter>

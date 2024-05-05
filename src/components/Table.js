@@ -20,13 +20,15 @@ const Table = ({ api, columnTitles,actions }) => {
                
               ))}
                
-                <td className='text-start' key={index}>
-                  {actions.map((value, index) => (
-                    <Link to="test" className="mx-2" key={index}>
-                      <span>{value}</span> 
-                    </Link>
-                  ))}
-                </td>
+               <td className='text-start' key={index}>
+                {actions.map((action, actionIndex) => (
+                  <Link to={action.link} className="mx-2" key={actionIndex}>
+                    <span>
+                      <i className={action.icon}></i> {action.label} 
+                    </span> <br/>
+                  </Link>
+                ))}
+              </td>
             </tr>
           ))}
         </tbody>

@@ -53,7 +53,7 @@ import { Link ,NavLink} from 'react-router-dom';
                         </NavLink>
                     </li>
                     <li className={`nav-item ${sidebarStyles.nav_item}`}>
-                        <NavLink to={"/Reclamation"} className={`nav-link ${sidebarStyles.nav_link}`}>
+                        <NavLink to={"/ListReclamation"} className={`nav-link ${sidebarStyles.nav_link}`}>
                           <i className="me-2 nav-icon fas fa-edit" />
                             <p>التشكيات</p>
                         </NavLink>

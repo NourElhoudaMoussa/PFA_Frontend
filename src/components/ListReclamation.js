@@ -1,40 +1,38 @@
 import React from 'react'
 import HeaderPage from './HeaderPage'
 import Table from './Table'
-export default function ListResponsableService() {
+export default function ListReclamation() {
     const apiData = [
-        ['1','03******','البيئة والمحيط','فلان','الفولاني', '25-04-1984', 'سوسة', 'ذكر','شارع المنجي قريرة بحي سهلول 4 بسوسة 4054','25785466','foulen@gmail.com'],
+        ['1','طرقات','وجود حفر في الطريق','عدم إعادة تأهيل الطرق اثر إصلاحات قامت بها شركة المياه مما جعل حالة الطريق سيئة','شارع المنجي قريرة بحي سهلول 4 بسوسة 4054', 'img.png' ,'25-04-2024', '10', '5','مطلب تحت الدرس'],
        
       ];
     
       const columnTitles = [
         '',
-        'رقم بطاقة التعريف',
-        'الخدمة',
-        'الاسم',
-        'اللقب',
-        'تاريخ الولادة',
-        'مكان الولادة',
-        'الجنس',
-        'عنوان السكن',
-        'رقم الهاتف',
-        'البريد الالكتروني',
+        'نوع المشكل',
+        'التصنبف الفرعي للمشكل',
+        'المحتوى',
+        'العنوان',
+        'الصورة',
+        'التاريخ',
+        'عدد المشاهدات',
+        'عدد الاعجابات',
+        'الحالة',
         'التعديلات',
       ];
       // Actions disponibles
-  const actions = ['تغيير', 'فسخ'];
+  const actions = ['تغيير حالة المطلب', 'إعادة توجيه المطلب'];
 
   // Icônes associées à chaque action (dans le même ordre)
   const actionIcons = [
     'fas fa-pen',
-    'fas fa-trash',
+    'fas fa-arrow-left',
   ];
   // Lien associé à chaque action (dans le même ordre)
   const actionLinks = [
-    '/update',
-    '/delete',
+    '/updateEtat',
+    '/redirection',
   ];
-      
   return (
     <div className="content-wrapper">
     <section className="content">
@@ -43,7 +41,7 @@ export default function ListResponsableService() {
           <div className="col-12">
             <div className="card card-outline card-info  mt-3 mx-2"> 
               <div className="card-header">
-                <HeaderPage title="قائمة المسؤولين" display={true} link="/AddResponsableService" linkText="أضف مسؤول عن خدمة"/>
+                <HeaderPage title="قائمة التشكيات" display={false} />
               </div>
               <div className="card-body">
                 <Table

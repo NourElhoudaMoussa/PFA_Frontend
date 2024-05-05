@@ -24,6 +24,17 @@ import Table from './Table'
       'المزيد من التفاصل ',
       'إلغاء الإعلان',
     ]
+    
+  // Icônes associées à chaque action (dans le même ordre)
+  const actionIcons = [
+    'fas fa-solid fa-file',
+    'fas fa-solid fa-ban',
+  ];
+  // Lien associé à chaque action (dans le même ordre)
+  const actionLinks = [
+    '/NewsDtails',
+    '/annulerPub',
+  ];
   return (
     <div className="content-wrapper">
       <section className="content">
@@ -38,7 +49,11 @@ import Table from './Table'
                   <Table
                     api={apiData}
                     columnTitles={columnTitles}
-                    actions={actions}
+                    actions={actions.map((action, index) => ({
+                      label: action,
+                      icon: actionIcons[index],
+                      link: actionLinks[index],
+                    }))}
                   />
                 </div>
               </div>
