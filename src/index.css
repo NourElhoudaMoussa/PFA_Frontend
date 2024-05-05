@@ -16,14 +16,21 @@ code {
     monospace;
    
 }
-.input-group {
-  direction: rtl; /* Définit la direction de droite à gauche */
+
+.ql-editor {
+  direction: rtl;
+  text-align: right;
 }
-.form-control{
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+div.dt-container div:first-child {
+  border: blue 1px solid;
 }
-.input-group-text{
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+div.dt-container div.dt-length {
+  border: red 1px solid;
+  width: 300px;
+}
+
+div.dt-container div.dt-search {
+  border: red 1px solid;
+  width: 500px;
+  float: right;
 }

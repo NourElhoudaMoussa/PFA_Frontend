@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-pascal-case */
-import './App.css';
+
 import Pfa_frontend from './Pfa_frontend';
 
 function App() {

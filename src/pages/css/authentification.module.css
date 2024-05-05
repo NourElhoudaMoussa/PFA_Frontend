@@ -1,0 +1,15 @@
+.input_group {
+    direction: rtl; /* Définit la direction de droite à gauche */
+  }
+  .form_control{
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+  }
+  .input_group_text{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .input_group_prepend{
+    width: 100%;
+  }
+  

@@ -2,8 +2,7 @@ import React, {} from 'react'
 
  function DashboardMain() {
   return (
-  <div>
-    {/* Content Wrapper. Contains page content */}
+/* Content Wrapper. Contains page content */
     <div className="content-wrapper">
       {/* Content Header (Page header) */}
       <div className="content-header">
@@ -575,7 +574,6 @@ import React, {} from 'react'
       </section>
       {/* /.content */}
     </div>
-  </div>
 
   );
 }

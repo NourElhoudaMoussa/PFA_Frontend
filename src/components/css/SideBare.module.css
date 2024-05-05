@@ -1,0 +1,22 @@
+.main_sidebar {
+    direction: rtl;
+    background-color: rgb(255, 255, 255);
+}
+
+.brand_link{
+    text-align: right; 
+}
+
+.brand_text{
+    color: black;
+    font-size: larger;
+}
+
+.nav_item {
+    text-align: right; 
+}
+
+.nav_link {
+    text-align: right;  
+}
+
