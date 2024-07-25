@@ -3,6 +3,7 @@ import React from 'react';
 import FroalaEditorComponent from 'react-froala-wysiwyg'; 
 import 'froala-editor/css/froala_style.min.css'; 
 import 'froala-editor/css/froala_editor.pkgd.min.css';
+import { Link } from 'react-router-dom';
 export default function NewsForm() {
 
 
@@ -22,6 +23,14 @@ export default function NewsForm() {
                     <div className="form-group text-start " dir='rtl'>
                       <label htmlFor="titre" className='mx-2'>عنوان الخبر</label>
                       <input type="text" className="form-control" id="titre" name="title"/>
+                    </div>
+                    <div className="form-group text-start " dir='rtl'>
+                      <label htmlFor="titre" className='mx-2'>الخدمة</label>
+                      <select className="form-control" id="titre" name="title">
+                        <option>-إختيار-</option>
+                        <option>البيئة و المحيط</option>
+                        <option>خدمة الدفاع عن المستهلك</option>
+                      </select>
                     </div>
                     <div className="form-group">
                       <div className='text-start'>
@@ -50,9 +59,9 @@ export default function NewsForm() {
                   </form>
                 </div>
                   <div className="card-footer text-center">
-                    <button type="button" className="btn btn-outline-danger mx-2"><i class="fa fa-arrow-left"></i> رجوع </button>
-                    <button type="button" className="btn btn-outline-info mx-2"><i class="fa fa-bullhorn"></i> نشر </button>
-                    <button type="button" className="btn btn-outline-primary mx-2"><i class="fa fa-check"></i> تسجيل </button>
+                    <Link to={"/News"} type="button" className="btn btn-outline-danger mx-2"><i class="fa fa-arrow-left"></i> رجوع </Link>
+                    <button  type="button" className="btn btn-outline-info mx-2"><i class="fa fa-bullhorn"></i> نشر </button>
+                    <Link to={"/News"} type="button" className="btn btn-outline-primary mx-2"><i class="fa fa-check"></i> تسجيل </Link>
                   </div>
               </div>
             </div>

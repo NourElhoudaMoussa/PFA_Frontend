@@ -1,6 +1,6 @@
 import React from 'react'
 import HeaderPage from './HeaderPage';
-
+import { Link } from 'react-router-dom';
 export default function ResponsableServiceForm() {
   return (
     <div className="wrapper">
@@ -104,7 +104,7 @@ export default function ResponsableServiceForm() {
                 </form>
               </div>
                 <div className="card-footer text-center">
-                  <button type="button" className="btn btn-outline-danger mx-2"><i class="fa fa-arrow-left"></i> رجوع </button>
+                  <Link to={"/ListResponsableService"} type="button" className="btn btn-outline-danger mx-2"><i class="fa fa-arrow-left"></i> رجوع </Link>
                   <button type="button" className="btn btn-outline-primary mx-2"><i class="fa fa-check"></i> إضافة </button>
                 </div>
             </div>

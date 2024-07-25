@@ -55,7 +55,7 @@ export default function Calendrier() {
                         
                         events={[
                           { title: 'عيد الشغل', date: '2024-05-01' },
-                          { title: 'حملة نظافة', date: '2024-05-15' }
+                           { title: 'حملة نظافة', date: '2024-05-15' }
                         ]}
                     />
                     </div>

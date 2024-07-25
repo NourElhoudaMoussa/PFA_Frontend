@@ -2,7 +2,7 @@ import * as React from 'react';
 import logo from '../assets/images/municipal.png';
 import authStyles from './css/authentification.module.css';
 import { request } from '../axios_helper'; // Importez la fonction request depuis axios_helper
-
+import { Link } from 'react-router-dom';
 function Authentification(){
     const ResponsableSignin = async (event) => {
         event.preventDefault(); // Empêche le rafraîchissement de la page par défaut
@@ -61,7 +61,7 @@ function Authentification(){
                                 </p>
                             </div>
                             <div className="text-center">
-                                <button type="submit" className="btn btn-primary btn-block">تسجيل الدخول</button>
+                                <Link to={"\dashboard"} type="submit" className="btn btn-primary btn-block">تسجيل الدخول</Link>
                             </div>
                         </form>   
                     </div>
